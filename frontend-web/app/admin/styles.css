@@ -1,0 +1,97 @@
+
+
+
+/* Admin-specific styles */
+.admin-tabs {
+  display: flex;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 30px;
+}
+
+.admin-tab {
+  flex: 1;
+  padding: 15px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #718096;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.admin-tab.active {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.admin-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.admin-form h2 {
+  margin-bottom: 20px;
+  color: #2d3748;
+  font-size: 24px;
+}
+
+.file-input-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.file-input {
+  position: absolute;
+  font-size: 100px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.file-input-label {
+  display: block;
+  padding: 12px;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  color: #4a5568;
+  cursor: pointer;
+  text-align: center;
+}
+
+.file-input-label:hover {
+  background-color: #edf2f7;
+}
+
+.form-description {
+  text-align: center;
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+.form-note {
+  font-size: 14px;
+  color: #a0aec0;
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Make nav links clickable */
+.nav-links a {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-content {
+    padding: 20px;
+  }
+}
